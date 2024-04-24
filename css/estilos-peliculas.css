@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
   background-color: aquamarine;
   margin: 0;
@@ -25,7 +24,7 @@ body {
 .imagen {
   margin-top: 10px;
 }
-/* Estilos para el formulario */
+
 .formulario {
   text-align: center;
 }
@@ -40,12 +39,11 @@ body {
   margin-bottom: 20px;
 }
 
-/* Estilos para el botón */
 button {
   padding: 10px 20px;
+  padding-right: 40px;
 }
 
-/* Estilos para el footer */
 footer {
   text-align: center;
   margin-top: 20px;
@@ -58,8 +56,8 @@ fieldset {
 }
 
 textarea {
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  height: auto; /* Ajusta automáticamente la altura según el contenido */
-  cols: 40; /* Número de columnas */
-  rows: 100; /* Número de filas */
+  width: 100%;
+  height: auto;
+  cols: 40;
+  rows: 100;
 }
