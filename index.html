@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios Pelicula</title>
+  </head>
+  <body>
+    <header>
+      <h1>CASTING FILM</h1>
+    </header>
+
+    <section class="fotocabecera">
+      <fieldset>
+        <img
+          class="foto1"
+          src="public/img/cabecera-form-pelicula.webp"
+          alt="actores"
+        />
+      </fieldset>
+    </section>
+
+    <section class="fotocabecera">
+      <fieldset>
+        <h2>Convocatoria a Actrices y Actores</h2>
+        <p>
+          Para la filmación de la pelicula
+          <strong>"El milagro de ser Full Stack Engineer"</strong>
+        </p>
+      </fieldset>
+    </section>
+
+    <section class="fotocabecera">
+      <fieldset>
+        <legend class="legend"><h3>Complete el Formulario</h3></legend>
+        <form>
+          <div class="campo">
+            <label for="nombre">Nombre*</label>
+            <input type="text" id="nombre" required />
+          </div>
+
+          <div class="campo">
+            <label for="apellido">Apellido*</label>
+            <input type="text" id="apellido" required />
+          </div>
+
+          <div class="campo">
+            <label for="fecha-nacimiento">Fecha de Nacimiento*</label>
+            <input type="date" id="fecha-nacimiento" required />
+          </div>
+
+          <div class="campo">
+            <label for="documento">Numero de Documento*</label>
+            <input type="number" id="documento" required />
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Telefono*</label>
+            <input type="tel" id="telefono" required />
+          </div>
+          <div class="campo">
+            <label for="email">Email*</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <legend>Contanos tus antecedentes</legend>
+          <div class="campo1">
+            <label for="curricua">Trabajos Anteriores</label>
+            <textarea name="curricua" id="" cols="65" rows="10"></textarea>
+          </div>
+        </form>
+      </fieldset>
+    </section>
+    <section class="fotocabecera">
+      <fieldset>
+        <div class="opciones">
+          <label><input type="checkbox" />Basquet</label>
+          <label><input type="checkbox" />Boxeo</label>
+          <label><input type="checkbox" />Fútbol</label>
+          <label><input type="checkbox" />Tenis</label>
+        </div>
+      </fieldset>
+    </section>
+  </body>
+
+  <script type="module" src="/main.js"></script>
+</html>
