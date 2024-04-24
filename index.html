@@ -6,81 +6,120 @@
     <title>Formularios Pelicula</title>
   </head>
   <body>
-    <header>
-      <h1>CASTING FILM</h1>
+    <!-- Logo -->
+    <header class="logo">
+      <img src="/img/logo2.webp" alt="Logo" width="860" height="309" />
     </header>
 
-    <section class="fotocabecera">
-      <fieldset>
-        <img
-          class="foto1"
-          src="public/img/cabecera-form-pelicula.webp"
-          alt="actores"
-        />
-      </fieldset>
+    <!-- Sección con imagen -->
+    <section class="imagen">
+      <img
+        src="/img/cabecera-form-pelicula.webp"
+        alt="Imagen"
+        width="860"
+        height="234"
+      />
     </section>
 
-    <section class="fotocabecera">
-      <fieldset>
-        <h2>Convocatoria a Actrices y Actores</h2>
-        <p>
-          Para la filmación de la pelicula
-          <strong>"El milagro de ser Full Stack Engineer"</strong>
-        </p>
-      </fieldset>
+    <!-- Sección Convocatoria -->
+    <section class="convocatoria">
+      <h1>Convocatoria a Actrices y Actores</h1>
+      <p>
+        Para la filmacion de la pelicula
+        <strong>Misión Imposible Full Stack</strong>
+      </p>
     </section>
 
-    <section class="fotocabecera">
-      <fieldset>
-        <legend class="legend"><h3>Complete el Formulario</h3></legend>
-        <form>
+    <!-- Formulario de Aceptación -->
+    <section class="formulario">
+      <form>
+        <fieldset>
+          <legend>Formulario de Aceptación</legend>
           <div class="campo">
             <label for="nombre">Nombre*</label>
             <input type="text" id="nombre" required />
           </div>
-
           <div class="campo">
             <label for="apellido">Apellido*</label>
             <input type="text" id="apellido" required />
           </div>
-
           <div class="campo">
-            <label for="fecha-nacimiento">Fecha de Nacimiento*</label>
-            <input type="date" id="fecha-nacimiento" required />
-          </div>
-
-          <div class="campo">
-            <label for="documento">Numero de Documento*</label>
-            <input type="number" id="documento" required />
-          </div>
-
-          <div class="campo">
-            <label for="telefono">Telefono*</label>
-            <input type="tel" id="telefono" required />
+            <label for="tipo-documento">Tipo de Documento</label>
+            <select id="tipo-documento">
+              <option value="dni">DNI</option>
+              <option value="cedula">Cédula</option>
+              <option value="pasaporte">Pasaporte</option>
+            </select>
+            <label for="numero-documento">Número de Documento</label>
+            <input type="number" id="numero-documento" />
+            <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fecha-nacimiento" />
           </div>
           <div class="campo">
-            <label for="email">Email*</label>
-            <input type="email" id="email" required />
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" />
+            <label for="email">Email</label>
+            <input type="email" id="email" />
           </div>
+          <div class="campo">
+            <legend>Contanos tu experiencia en cine</legend>
+            <textarea id="experiencia" rows="6"></textarea>
+          </div>
+          <div class="campo">
+            <p><strong>Disposición para viajar</strong></p>
 
-          <legend>Contanos tus antecedentes</legend>
-          <div class="campo1">
-            <label for="curricua">Trabajos Anteriores</label>
-            <textarea name="curricua" id="" cols="65" rows="10"></textarea>
+            <label><input type="radio" name="viajar" value="si" />Sí</label>
+            <label><input type="radio" name="viajar" value="no" />No</label>
           </div>
-        </form>
-      </fieldset>
+          <div class="campo">
+            <p><strong>Fisic to roll</strong></p>
+
+            <label
+              ><input
+                type="checkbox"
+                name="genero"
+                value="dramatico"
+              />Dramático</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="genero"
+                value="terror"
+              />Terror</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="genero"
+                value="accion"
+              />Acción</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="genero"
+                value="comedia"
+              />Comedia</label
+            >
+          </div>
+          <div class="campo">
+            <p><strong>Acepto los terminos del contrato</strong></p>
+
+            <label><input type="checkbox" id="aceptar-terminos" />Acepto</label>
+          </div>
+          <div class="campo">
+            <button type="button">Adjuntar Documentación</button>
+            <button type="submit">Enviar</button>
+          </div>
+        </fieldset>
+      </form>
     </section>
-    <section class="fotocabecera">
-      <fieldset>
-        <div class="opciones">
-          <label><input type="checkbox" />Basquet</label>
-          <label><input type="checkbox" />Boxeo</label>
-          <label><input type="checkbox" />Fútbol</label>
-          <label><input type="checkbox" />Tenis</label>
-        </div>
-      </fieldset>
-    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© casting.ar Todos los derechos reservados</p>
+    </footer>
   </body>
 
   <script type="module" src="/main.js"></script>

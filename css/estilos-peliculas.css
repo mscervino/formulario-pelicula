@@ -1,103 +1,65 @@
+/* Estilos generales */
 body {
-  
+  background-color: aquamarine;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  text-align: center;
+.logo,
+.imagen,
+.convocatoria,
+.formulario {
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.fotocabecera {
-  display: 70%;
-  margin-right: 70px;
-  margin-left: 70px;
+.logo img {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
+}
+
+.imagen {
+  margin-top: 10px;
+}
+/* Estilos para el formulario */
+.formulario {
   text-align: center;
 }
 
-.foto1 {
-  width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+.formulario form {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
 }
 
 .campo {
-  display: inline-block;
+  margin-bottom: 20px;
 }
 
-.fotocabecera {
-  margin: 0 auto;
-  max-width: 600px;
+/* Estilos para el botón */
+button {
+  padding: 10px 20px;
+}
+
+/* Estilos para el footer */
+footer {
+  text-align: center;
   margin-top: 20px;
 }
 
 fieldset {
-  border: 2px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-legend {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.formulario {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.campo {
-  width: calc(
-    50% - 5px
-  ); /* Restamos 5px para tener un pequeño espacio entre los campos */
-  margin-bottom: 15px;
-}
-
-.campo label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.campo input {
-  width: 90%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Agregamos margen derecho solo al primer campo */
-.campo:first-child {
-  margin-right: 5px; /* 5px de margen entre los campos */
-}
-
-input[type='submit'] {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type='reset'] {
-  background-color: #f44336;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-input::placeholder {
-  color: #999; /* Color gris para el placeholder */
-}
-
-section {
-  text-align: center; /* Centra el contenido del section */
+  margin-left: 90px;
+  margin-right: 90px;
+  display: flexbox;
 }
 
 textarea {
-  margin: 0 auto; /* Centra el textarea horizontalmente */
-  display: block; /* Para que el margin auto funcione */
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: auto; /* Ajusta automáticamente la altura según el contenido */
+  cols: 40; /* Número de columnas */
+  rows: 100; /* Número de filas */
 }
